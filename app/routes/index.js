@@ -1,19 +1,16 @@
 'use strict';
 
-var URLShortHandler = require(process.cwd() + '/app/controllers/urlShortHandler.server.js');
+var ImageSearchHandler = require(process.cwd() + '/app/controllers/imageSearchHandler.server.js');
 
 module.exports = function (app, db) {
   
-  var urlShortHandler = new URLShortHandler(db);
+  var imageSearchHandler = new ImageSearchHandler(db);
   
   app.route('/')
     .get(function (req, res) {
       res.sendFile(process.cwd() + '/public/index.html');
     });
     
-  app.route('/new/:anything*')
-    .get(urlShortHandler.getURL);
-    
-  app.route('/:id')
-    .get(urlShortHandler.redirectURL);
+  app.route('/api/imageSearch/:anything*')
+    .get(imageSearchHandler.getImages);
 };

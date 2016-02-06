@@ -3,9 +3,12 @@
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
-var Url = new Schema({
-	    originalUrl: String,
+var Image = new Schema({
+	    url: String,
+	    snippet: String,
+	    thumbnail: String,
+	    context: String,
 	    id: String
 });
 
-module.exports = mongoose.model('Url', Url);
+module.exports = mongoose.model('Image', Image);
