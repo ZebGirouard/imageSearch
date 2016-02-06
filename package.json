@@ -1,0 +1,20 @@
+{
+  "name": "clemtutorial",
+  "version": "1.0.0",
+  "description": "FirstShot with ClementineJS",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ZebGirouard",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.14.2",
+    "dotenv": "^2.0.0",
+    "express": "^4.13.3",
+    "express-session": "^1.13.0",
+    "mongodb": "^2.0.48",
+    "mongoose": "^4.3.7",
+    "passport": "^0.3.2"
+  }
+}
