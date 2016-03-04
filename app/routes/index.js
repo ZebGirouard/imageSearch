@@ -11,6 +11,9 @@ module.exports = function (app, db) {
       res.sendFile(process.cwd() + '/public/index.html');
     });
     
-  app.route('/api/imageSearch/:anything*')
+  app.route('/api/imageSearch/:searchTerm*')
     .get(imageSearchHandler.getImages);
+    
+  app.route('/api/latest/imagesearch')
+    .get(imageSearchHandler.getHistory);
 };

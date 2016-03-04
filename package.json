@@ -13,8 +13,11 @@
     "dotenv": "^2.0.0",
     "express": "^4.13.3",
     "express-session": "^1.13.0",
+    "jquery": "^2.2.0",
+    "jsdom": "^3.1.2",
     "mongodb": "^2.0.48",
     "mongoose": "^4.3.7",
-    "passport": "^0.3.2"
+    "passport": "^0.3.2",
+    "xmlhttprequest": "^1.8.0"
   }
 }
